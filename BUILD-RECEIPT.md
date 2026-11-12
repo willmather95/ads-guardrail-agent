@@ -20,7 +20,7 @@ Built Nov 12, 2026 for willmather95. Local commits only. Not pushed, no GitHub r
 
 ```
 .venv/bin/python -m pytest
-..................................................................       [100%]
+66 passed (8.61s)
 ```
 
 This includes a Hypothesis property test (600 examples) that no decision exceeds any cap, and a multi-day end-to-end property test that re-checks the audit log independently. Other tests cover the kill switch, rollback exactness, dry run never writing, the audit chain and tampering, the connectors, the warehouse, fixture determinism and the CLI. CI: `.github/workflows/ci.yml` runs the tests and the demo on Python 3.11, 3.12 and 3.13. No secrets.
