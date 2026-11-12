@@ -1,0 +1,357 @@
+{
+ "_label": "SIMULATED 14-day run on SYNTHETIC fixtures. Fake in-memory ad account. Not real results.",
+ "start": "2026-11-01",
+ "days": 14,
+ "config": "demo.toml",
+ "config_fingerprint": "9aae3e78",
+ "caps": {
+  "budget_per_change": "20% or $50",
+  "bid_per_change": "15% or $10",
+  "account_daily_change_cap": 150.0,
+  "account_total_caps": {
+   "1112223333": 2000.0,
+   "act_900000000000001": 1800.0
+  },
+  "cooldown_hours": 72,
+  "max_changes_per_run": 5
+ },
+ "totals": {
+  "proposed_budget_move": 15567.76,
+  "capped_budget_move": 1068.14,
+  "applied_budget_move": 1068.14,
+  "proposals": 117,
+  "approved": 0,
+  "clamped": 47,
+  "blocked": 70,
+  "applied": 46
+ },
+ "events": [
+  {
+   "day": "2026-11-03",
+   "kind": "rogue",
+   "text": "Another agent asks for +$5,000/day"
+  },
+  {
+   "day": "2026-11-03",
+   "kind": "rogue_result",
+   "verdict": "clamped",
+   "asked": 5000.0,
+   "allowed": 50.0,
+   "notes": [
+    "per-change cap 20% / $50.00 limits it to $50.00"
+   ]
+  },
+  {
+   "day": "2026-11-09",
+   "kind": "kill",
+   "text": "Kill switch engaged after 1 write"
+  },
+  {
+   "day": "2026-11-10",
+   "kind": "release",
+   "text": "Released; finished runs re-run as no-ops"
+  }
+ ],
+ "days_rows": [
+  {
+   "day": "2026-11-01",
+   "run_id": "run-2026-11-01-9aae3e78",
+   "proposals": 11,
+   "approved": 0,
+   "clamped": 5,
+   "blocked": 6,
+   "applied": 5,
+   "halted": false,
+   "proposed_budget_move": 1209.65,
+   "capped_budget_move": 176.0,
+   "applied_budget_move": 176.0,
+   "proposed_bid_move": 66.0,
+   "applied_bid_move": 10.0,
+   "total_budget": {
+    "1112223333": 1734.0,
+    "act_900000000000001": 1660.0
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-02",
+   "run_id": "run-2026-11-02-9aae3e78",
+   "proposals": 11,
+   "approved": 0,
+   "clamped": 5,
+   "blocked": 6,
+   "applied": 5,
+   "halted": false,
+   "proposed_budget_move": 974.12,
+   "capped_budget_move": 94.0,
+   "applied_budget_move": 94.0,
+   "proposed_bid_move": 79.64,
+   "applied_bid_move": 9.75,
+   "total_budget": {
+    "1112223333": 1770.0,
+    "act_900000000000001": 1630.0
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-03",
+   "run_id": "run-2026-11-03-9aae3e78",
+   "proposals": 11,
+   "approved": 0,
+   "clamped": 3,
+   "blocked": 8,
+   "applied": 3,
+   "halted": false,
+   "proposed_budget_move": 5849.44,
+   "capped_budget_move": 90.0,
+   "applied_budget_move": 90.0,
+   "proposed_bid_move": 78.8,
+   "applied_bid_move": 0.0,
+   "total_budget": {
+    "1112223333": 1794.0,
+    "act_900000000000001": 1696.0
+   },
+   "notes": [
+    "rogue +$5,000/day request from another agent"
+   ]
+  },
+  {
+   "day": "2026-11-04",
+   "run_id": "run-2026-11-04-9aae3e78",
+   "proposals": 8,
+   "approved": 0,
+   "clamped": 2,
+   "blocked": 6,
+   "applied": 2,
+   "halted": false,
+   "proposed_budget_move": 427.19,
+   "capped_budget_move": 28.8,
+   "applied_budget_move": 28.8,
+   "proposed_bid_move": 72.05,
+   "applied_bid_move": 10.0,
+   "total_budget": {
+    "1112223333": 1765.2,
+    "act_900000000000001": 1696.0
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-05",
+   "run_id": "run-2026-11-05-9aae3e78",
+   "proposals": 12,
+   "approved": 0,
+   "clamped": 5,
+   "blocked": 7,
+   "applied": 5,
+   "halted": false,
+   "proposed_budget_move": 1693.06,
+   "capped_budget_move": 174.0,
+   "applied_budget_move": 174.0,
+   "proposed_bid_move": 71.67,
+   "applied_bid_move": 5.73,
+   "total_budget": {
+    "1112223333": 1865.2,
+    "act_900000000000001": 1722.0
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-06",
+   "run_id": "run-2026-11-06-9aae3e78",
+   "proposals": 9,
+   "approved": 0,
+   "clamped": 4,
+   "blocked": 5,
+   "applied": 4,
+   "halted": false,
+   "proposed_budget_move": 552.23,
+   "capped_budget_move": 43.2,
+   "applied_budget_move": 43.2,
+   "proposed_bid_move": 41.43,
+   "applied_bid_move": 13.45,
+   "total_budget": {
+    "1112223333": 1854.0,
+    "act_900000000000001": 1754.0
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-07",
+   "run_id": "run-2026-11-07-9aae3e78",
+   "proposals": 8,
+   "approved": 0,
+   "clamped": 2,
+   "blocked": 6,
+   "applied": 2,
+   "halted": false,
+   "proposed_budget_move": 562.2,
+   "capped_budget_move": 41.04,
+   "applied_budget_move": 41.04,
+   "proposed_bid_move": 41.91,
+   "applied_bid_move": 0.0,
+   "total_budget": {
+    "1112223333": 1812.96,
+    "act_900000000000001": 1754.0
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-08",
+   "run_id": "run-2026-11-08-9aae3e78",
+   "proposals": 8,
+   "approved": 0,
+   "clamped": 5,
+   "blocked": 3,
+   "applied": 5,
+   "halted": false,
+   "proposed_budget_move": 1368.05,
+   "capped_budget_move": 89.2,
+   "applied_budget_move": 89.2,
+   "proposed_bid_move": 81.69,
+   "applied_bid_move": 14.87,
+   "total_budget": {
+    "1112223333": 1862.96,
+    "act_900000000000001": 1753.2
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-09",
+   "run_id": "run-2026-11-09-9aae3e78",
+   "proposals": 7,
+   "approved": 0,
+   "clamped": 2,
+   "blocked": 5,
+   "applied": 1,
+   "halted": true,
+   "proposed_budget_move": 518.91,
+   "capped_budget_move": 50.0,
+   "applied_budget_move": 50.0,
+   "proposed_bid_move": 75.86,
+   "applied_bid_move": 0.0,
+   "total_budget": {
+    "1112223333": 1912.96,
+    "act_900000000000001": 1753.2
+   },
+   "notes": [
+    "halted: file KILL_SWITCH present: operator: pause all writes (demo)"
+   ]
+  },
+  {
+   "day": "2026-11-10",
+   "run_id": "run-2026-11-10-9aae3e78",
+   "proposals": 5,
+   "approved": 0,
+   "clamped": 2,
+   "blocked": 3,
+   "applied": 2,
+   "halted": false,
+   "proposed_budget_move": 413.88,
+   "capped_budget_move": 50.0,
+   "applied_budget_move": 50.0,
+   "proposed_bid_move": 70.03,
+   "applied_bid_move": 10.0,
+   "total_budget": {
+    "1112223333": 1912.96,
+    "act_900000000000001": 1703.2
+   },
+   "notes": [
+    "kill switch released; re-run of run-2026-11-01-9aae3e78: already_complete=True"
+   ]
+  },
+  {
+   "day": "2026-11-11",
+   "run_id": "run-2026-11-11-9aae3e78",
+   "proposals": 8,
+   "approved": 0,
+   "clamped": 5,
+   "blocked": 3,
+   "applied": 5,
+   "halted": false,
+   "proposed_budget_move": 586.41,
+   "capped_budget_move": 126.03,
+   "applied_budget_move": 126.03,
+   "proposed_bid_move": 64.58,
+   "applied_bid_move": 10.0,
+   "total_budget": {
+    "1112223333": 1944.53,
+    "act_900000000000001": 1722.4
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-12",
+   "run_id": "run-2026-11-12-9aae3e78",
+   "proposals": 6,
+   "approved": 0,
+   "clamped": 3,
+   "blocked": 3,
+   "applied": 3,
+   "halted": false,
+   "proposed_budget_move": 923.65,
+   "capped_budget_move": 62.0,
+   "applied_budget_move": 62.0,
+   "proposed_bid_move": 51.06,
+   "applied_bid_move": 4.14,
+   "total_budget": {
+    "1112223333": 1994.53,
+    "act_900000000000001": 1734.4
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-13",
+   "run_id": "run-2026-11-13-9aae3e78",
+   "proposals": 7,
+   "approved": 0,
+   "clamped": 2,
+   "blocked": 5,
+   "applied": 2,
+   "halted": false,
+   "proposed_budget_move": 355.96,
+   "capped_budget_move": 28.51,
+   "applied_budget_move": 28.51,
+   "proposed_bid_move": 48.15,
+   "applied_bid_move": 0.0,
+   "total_budget": {
+    "1112223333": 2000.0,
+    "act_900000000000001": 1757.44
+   },
+   "notes": []
+  },
+  {
+   "day": "2026-11-14",
+   "run_id": "run-2026-11-14-9aae3e78",
+   "proposals": 6,
+   "approved": 0,
+   "clamped": 2,
+   "blocked": 4,
+   "applied": 2,
+   "halted": false,
+   "proposed_budget_move": 133.01,
+   "capped_budget_move": 15.36,
+   "applied_budget_move": 15.36,
+   "proposed_bid_move": 49.4,
+   "applied_bid_move": 10.0,
+   "total_budget": {
+    "1112223333": 2000.0,
+    "act_900000000000001": 1742.08
+   },
+   "notes": []
+  }
+ ],
+ "rollback": {
+  "last_run": "run-2026-11-14-9aae3e78",
+  "last_run_restored": 2,
+  "last_run_exact": true,
+  "all_runs_restored": 46,
+  "conflicts": 0,
+  "all_runs_exact": true
+ },
+ "audit": {
+  "ok": true,
+  "message": "218 records, chain intact",
+  "cap_breaches": 0
+ },
+ "end_state_changed_entities": 16
+}

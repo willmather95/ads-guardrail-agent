@@ -1,0 +1,7 @@
+# HOME: run the agent every morning at 06:15 UTC, after the overnight warehouse load.
+# Dry run by default. To write, set [writes] enabled = true in guardrail.toml AND add --apply.
+# Exit codes: 0 ok, 1 error, 3 halted by kill switch, 4 refused (--apply without config flag).
+15 6 * * *  cd /opt/ads-guardrail-agent && .venv/bin/ads-guardrail --config guardrail.toml tick --source both --warehouse /opt/marketing-warehouse/brain.duckdb >> logs/tick.log 2>&1
+
+# Verify the audit chain once a day; alert if it breaks.
+30 6 * * *  cd /opt/ads-guardrail-agent && .venv/bin/ads-guardrail audit verify || echo "audit chain broken" | mail -s "ads-guardrail" ops@example.com

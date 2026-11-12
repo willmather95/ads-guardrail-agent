@@ -1,0 +1,167 @@
+[
+ {
+  "results": [
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000001",
+     "id": "21000000001",
+     "name": "Search | Brand",
+     "status": "ENABLED",
+     "biddingStrategyType": "TARGET_CPA",
+     "biddingStrategySystemStatus": "ENABLED",
+     "targetCpa": {
+      "targetCpaMicros": "25000000"
+     }
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000001",
+     "amountMicros": "60000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000002",
+     "id": "21000000002",
+     "name": "Search | Water Heater Repair",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000002",
+     "amountMicros": "250000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000003",
+     "id": "21000000003",
+     "name": "Search | Drain Cleaning",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000003",
+     "amountMicros": "180000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000004",
+     "id": "21000000004",
+     "name": "Search | Emergency Plumber",
+     "status": "ENABLED",
+     "biddingStrategyType": "TARGET_CPA",
+     "biddingStrategySystemStatus": "ENABLED",
+     "targetCpa": {
+      "targetCpaMicros": "140000000"
+     }
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000004",
+     "amountMicros": "300000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000005",
+     "id": "21000000005",
+     "name": "PMax | All Services",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000005",
+     "amountMicros": "400000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000006",
+     "id": "21000000006",
+     "name": "Search | Water Heater Install",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "LEARNING_NEW"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000006",
+     "amountMicros": "120000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000007",
+     "id": "21000000007",
+     "name": "Search | Sewer Line",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000007",
+     "amountMicros": "90000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000008",
+     "id": "21000000008",
+     "name": "Search | Leak Detection",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED",
+     "maximizeConversions": {
+      "targetCpaMicros": "70000000"
+     }
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000008",
+     "amountMicros": "150000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000009",
+     "id": "21000000009",
+     "name": "Display | Remarketing",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000009",
+     "amountMicros": "70000000",
+     "explicitlyShared": false
+    }
+   },
+   {
+    "campaign": {
+     "resourceName": "customers/1112223333/campaigns/21000000010",
+     "id": "21000000010",
+     "name": "Search | Repipe",
+     "status": "ENABLED",
+     "biddingStrategyType": "MAXIMIZE_CONVERSIONS",
+     "biddingStrategySystemStatus": "ENABLED"
+    },
+    "campaignBudget": {
+     "resourceName": "customers/1112223333/campaignBudgets/30000000010",
+     "amountMicros": "100000000",
+     "explicitlyShared": true
+    }
+   }
+  ],
+  "fieldMask": "campaign.id,campaign.name,...",
+  "requestId": "synthetic-entities"
+ }
+]

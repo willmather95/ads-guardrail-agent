@@ -1,0 +1,35 @@
+{
+ "_synthetic": true,
+ "targets": {
+  "21000000001": {
+   "target_cpa_micros": 25000000
+  },
+  "21000000002": {
+   "target_cpa_micros": 90000000
+  },
+  "21000000003": {
+   "target_cpa_micros": 80000000
+  },
+  "21000000004": {
+   "target_cpa_micros": 110000000
+  },
+  "21000000005": {
+   "target_cpa_micros": 95000000
+  },
+  "21000000006": {
+   "target_cpa_micros": 150000000
+  },
+  "21000000007": {
+   "target_cpa_micros": 200000000
+  },
+  "21000000008": {
+   "target_cpa_micros": 70000000
+  },
+  "21000000009": {
+   "target_cpa_micros": 60000000
+  },
+  "21000000010": {
+   "target_cpa_micros": 120000000
+  }
+ }
+}

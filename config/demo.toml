@@ -1,0 +1,49 @@
+# DEMO config for `make demo`. Writes go to an in-memory fake account built from SYNTHETIC fixtures.
+
+[writes]
+# The config half of the two-key write switch. The CLI also needs --apply.
+enabled = true   # demo only: writes go to an in-memory fake account
+
+[kill_switch]
+file = "KILL_SWITCH"            # `touch KILL_SWITCH` halts every write, checked before each one
+env_var = "ADS_GUARDRAIL_KILL"  # or export ADS_GUARDRAIL_KILL=1
+
+[guardrails]
+account_daily_change_cap = 150     # sum of |budget change| per account per UTC day
+default_account_total_budget_cap = 5000
+cooldown_hours = 72                # min hours between writes to one entity
+max_changes_per_run = 5
+min_change = 1                     # skip changes smaller than $1 after caps
+# fnmatch patterns on platform:account:entity. Empty = nothing is writable.
+allowlist = [
+  "google_ads:1112223333:2100000000[2-9]",   # brand (id ending 01) stays manual
+  "google_ads:1112223333:21000000010",
+  "meta:act_900000000000001:*",
+]
+
+[guardrails.account_total_budget_cap]
+"1112223333" = 2000
+"act_900000000000001" = 1800
+
+[guardrails.budget]
+max_change_pct = 20    # per change, % of current daily budget
+max_change_abs = 50    # per change, dollars
+floor = 5              # never set a daily budget below this
+
+[guardrails.bid]
+max_change_pct = 15
+max_change_abs = 10
+floor = 1
+
+[policy]
+lookback_days = 7
+min_days_of_data = 5
+min_conversions = 10
+min_spend_target_multiple = 3   # ...or spend of 3x target CPA
+min_spend = 100
+cpa_band = 0.15
+roas_band = 0.15
+min_confidence = 0.80
+budget_limited_utilization = 0.90
+underpacing_utilization = 0.60
+spend_elasticity = 0.75

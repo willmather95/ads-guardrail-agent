@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ads-guardrail-agent"
+version = "0.1.0"
+description = "Propose Google Ads and Meta bid and budget changes with plain-English reasons, and write them only under hard caps."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Will Mather" }]
+dependencies = ["duckdb>=1.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "hypothesis>=6.100"]
+
+[project.scripts]
+ads-guardrail = "ads_guardrail.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ads_guardrail = ["fixtures/*.json", "fixtures/*.md", "fixtures/*/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

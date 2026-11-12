@@ -1,0 +1,114 @@
+[
+ {
+  "data": [
+   {
+    "id": "23800000000000001",
+    "name": "Prospecting | Broad US",
+    "daily_budget": "30000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000002",
+    "name": "Prospecting | LAL 1% purchasers",
+    "daily_budget": "20000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000003",
+    "name": "Prospecting | Interest stack",
+    "daily_budget": "15000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000004",
+    "name": "Retargeting | 7d site visitors",
+    "daily_budget": "8000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000005",
+    "name": "Retargeting | Cart abandoners",
+    "daily_budget": "10000",
+    "bid_strategy": "COST_CAP",
+    "effective_status": "ACTIVE",
+    "bid_amount": "2000",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000006",
+    "name": "ASC | Full catalog",
+    "daily_budget": "50000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000007",
+    "name": "Prospecting | Creative test A",
+    "daily_budget": "4000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000008",
+    "name": "Prospecting | Video viewers 50%",
+    "daily_budget": "12000",
+    "bid_strategy": "COST_CAP",
+    "effective_status": "ACTIVE",
+    "bid_amount": "4500",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   },
+   {
+    "id": "23800000000000009",
+    "name": "Prospecting | LAL 3% purchasers",
+    "daily_budget": "10000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "LEARNING"
+    }
+   },
+   {
+    "id": "23800000000000010",
+    "name": "Retargeting | Past purchasers 180d",
+    "daily_budget": "6000",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "effective_status": "ACTIVE",
+    "learning_stage_info": {
+     "status": "SUCCESS"
+    }
+   }
+  ],
+  "paging": {
+   "cursors": {
+    "before": "a0",
+    "after": "a1"
+   }
+  }
+ }
+]

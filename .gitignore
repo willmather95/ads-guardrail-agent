@@ -1,0 +1,13 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.hypothesis/
+demo/out/
+.ads-guardrail/
+KILL_SWITCH
+*.duckdb
+*.duckdb.wal
+.env
+guardrail.toml
+!config/*.toml
